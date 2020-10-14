@@ -757,6 +757,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.egl=adreno \
     ro.gfx.driver.0=com.google.pixel.wahoo.gfxdrv
 
+# CHRE
+PRODUCT_PACKAGES += \
+    chre
+
 include hardware/google/pixel/vibrator/drv2624/device.mk
 include hardware/google/pixel/mm/device_legacy.mk
 include hardware/google/pixel/thermal/device.mk
