@@ -692,6 +692,10 @@ PRODUCT_PACKAGES += vndk_package
 
 PRODUCT_ENFORCE_RRO_TARGETS := framework-res
 
+PRODUCT_EXTRA_VNDK_VERSIONS := 30
+
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Override heap growth limit due to high display density on device
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapgrowthlimit=256m
